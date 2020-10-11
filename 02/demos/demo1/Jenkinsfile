@@ -13,6 +13,7 @@ pipeline {
             sh '''
                echo "Using a multi-line shell step"
                ls -l
+               pwd
                chmod +x test.sh
                ./test.sh
             '''
