@@ -23,6 +23,7 @@ pipeline {
         }
       }
    }
+}
 
 void installTerraform() {
    sh '''
@@ -31,5 +32,4 @@ void installTerraform() {
       mv terraform /usr/bin/terraform
       terraform version
       '''
-}
 }
