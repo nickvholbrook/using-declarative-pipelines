@@ -15,7 +15,7 @@ pipeline {
                ls -l
                pwd
                chmod +x 02/demos/demo1/test.sh
-               ./test.sh
+               02/demos/demo1/test.sh
             '''
          }
       }
