@@ -14,7 +14,7 @@ pipeline {
                echo "Using a multi-line shell step"
                ls -l
                pwd
-               chmod +x test.sh
+               chmod +x 02/demos/demo1/test.sh
                ./test.sh
             '''
          }
