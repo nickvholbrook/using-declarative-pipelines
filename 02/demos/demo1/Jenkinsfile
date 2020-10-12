@@ -18,6 +18,18 @@ pipeline {
                02/demos/demo1/test.sh
             '''
          }
+      stage('Install-Terraform') {
+         installTerraform()
+        }
       }
    }
+
+void installTerraform() {
+   sh '''
+      wget https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip
+      unzip terraform_0.12.21_linux_amd64.zip && rm terraform_0.12.21_linux_amd64.zip
+      mv terraform /usr/bin/terraform
+      terraform version
+      '''
+}
 }
