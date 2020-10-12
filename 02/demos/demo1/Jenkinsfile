@@ -18,11 +18,11 @@ pipeline {
                02/demos/demo1/test.sh
             '''
          }
+      }   
       stage('Install-Terraform') {
          installTerraform()
         }
       }
-   }
 }
 
 void installTerraform() {
